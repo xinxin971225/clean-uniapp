@@ -1,0 +1,38 @@
+{
+  "script": {
+    "scope": "vue",
+    "prefix": "script",
+    "body": [
+      "<script>",
+      "export default {",
+      "\tname: '${0}'",
+      "}",
+      "</script>"
+    ],
+    "description": "<script>"
+  },
+  "template": {
+    "scope": "vue",
+    "prefix": "template",
+    "body": ["<template>", "\t${0}", "</template>"],
+    "description": "<template>"
+  },
+  "style": {
+    "scope": "vue",
+    "prefix": "style",
+    "body": ["<style lang=\"scss\" scoped>", "${0}", "</style>"],
+    "description": "<style lang=\"scss\" scoped>"
+  },
+  "test": {
+    "prefix": "test",
+    "body": [
+      "import { } from '../index'",
+      "describe('${0}', () => {",
+      "\tit('', () => {",
+      "\t\texpect().toBe()",
+      "\t})",
+      "})"
+    ],
+    "description": "Unit test block"
+  }
+}

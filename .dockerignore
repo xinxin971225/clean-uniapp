@@ -1,0 +1,10 @@
+# git
+.git/
+.gitignore
+
+# docker
+.dockerignore
+**/*Dockerfile
+
+# others
+**/*md

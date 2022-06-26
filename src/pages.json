@@ -1,0 +1,320 @@
+{
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      // uni-ui 规则如下配置
+      "^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+    }
+  },
+
+  "pages": [
+    // pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "uni-app"
+      }
+    },
+    {
+      "path": "pages/xc-mine/index",
+      "style": {
+        "navigationBarTitleText": "Mine"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#737380",
+    "selectedColor": "#4A57FF",
+    "borderStyle": "black",
+    "backgroundColor": "#F8F8F8",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/image/ic-resume-screening-n.png",
+        "selectedIconPath": "static/image/ic-resume-screening-f.png",
+        "text": "home"
+      },
+      {
+        "pagePath": "pages/xc-mine/index",
+        "iconPath": "static/image/ic-personal-n.png",
+        "selectedIconPath": "static/image/ic-personal-f.png",
+        "text": "个人中心"
+      }
+    ]
+  }
+}
+
+// {
+//   "pages": [
+//     // #ifdef H5
+//     {
+//       "path": "pages/index/index",
+//       "style": {
+//         "navigationBarTitleText": "招聘助手",
+//         "app-plus": {
+//           "titleNView": false
+//         }
+//       }
+//     },
+//     {
+//       "path": "pages/hr-mine/index",
+//       "style": {
+//         "navigationBarTitleText": "招聘管理",
+//         "app-plus": {
+//           "titleNView": false
+//         }
+//       }
+//     },
+//     {
+//       "path": "pages/hr-resume/list",
+//       "style": {
+//         "navigationBarTitleText": "简历列表",
+//         "onReachBottomDistance": 100,
+//         "app-plus": {
+//           "titleNView": false
+//         }
+//       }
+//     },
+//     {
+//       "path": "pages/hr-record/resume-list",
+//       "style": {
+//         "navigationBarTitleText": "分享的简历",
+//         "onReachBottomDistance": 100,
+//         "app-plus": {
+//           "titleNView": false
+//         }
+//       }
+//     },
+//     {
+//       "path": "pages/hr-resume/detail",
+//       "style": {
+//         "navigationBarTitleText": "简历详情",
+//         "app-plus": {
+//           "titleNView": false
+//         }
+//       }
+//     },
+//     {
+//       "path": "pages/hr-job/list",
+//       "style": {
+//         "navigationBarTitleText": "职位列表",
+//         "onReachBottomDistance": 100,
+//         "app-plus": {
+//           "titleNView": false
+//         }
+//       }
+//     },
+//     {
+//       "path": "pages/hr-record/job-list",
+//       "style": {
+//         "navigationBarTitleText": "分享的职位",
+//         "onReachBottomDistance": 100,
+//         "app-plus": {
+//           "titleNView": false
+//         }
+//       }
+//     },
+//     {
+//       "path": "pages/hr-job/detail",
+//       "style": {
+//         "navigationBarTitleText": "职位详情",
+//         "app-plus": {
+//           "titleNView": false
+//         }
+//       }
+//     },
+//     {
+//       "path": "pages/result/unauthorized",
+//       "style": {
+//         "navigationBarTitleText": "暂无权限",
+//         "app-plus": {
+//           "titleNView": false
+//         }
+//       }
+//     },
+//     {
+//       "path": "pages/result/error",
+//       "style": {
+//         "navigationBarTitleText": "出错啦",
+//         "app-plus": {
+//           "titleNView": false
+//         }
+//       }
+//     },
+//     {
+//       "path": "pages/result/empty",
+//       "style": {
+//         "navigationBarTitleText": "来晚啦",
+//         "app-plus": {
+//           "titleNView": false
+//         }
+//       }
+//     },
+//     // #endif
+//     // #ifdef MP-WEIXIN
+//     {
+//       "path": "pages/xc-resume-screening/index",
+//       "style": {
+//         "navigationBarTitleText": "简历筛选",
+//         "onReachBottomDistance": 100,
+//         "enablePullDownRefresh": true,
+//         "app-plus": {
+//           "titleNView": false
+//         }
+//       }
+//     },
+//     {
+//       "path": "pages/xc-record/index",
+//       "style": {
+//         "navigationBarTitleText": "导入记录",
+//         "onReachBottomDistance": 100,
+//         "app-plus": {
+//           "titleNView": false
+//         }
+//       }
+//     },
+//     {
+//       "path": "pages/xc-interview-arranged/index",
+//       "style": {
+//         "navigationBarTitleText": "面试安排",
+//         "onReachBottomDistance": 100,
+//         "enablePullDownRefresh": true,
+//         "app-plus": {
+//           "titleNView": false
+//         }
+//       }
+//     },
+//     {
+//       "path": "pages/xc-interview-arranged/interviewComment",
+//       "style": {
+//         "navigationBarTitleText": "面试评价",
+//         "onReachBottomDistance": 100,
+//         "app-plus": {
+//           "titleNView": false
+//         }
+//       }
+//     },
+//     {
+//       "path": "pages/xc-webview/index",
+//       "style": {
+//         "navigationBarTitleText": "腾讯会议",
+//         "onReachBottomDistance": 100,
+//         "app-plus": {
+//           "titleNView": false
+//         }
+//       }
+//     },
+//     {
+//       "path": "pages/xc-resume/detail",
+//       "style": {
+//         "navigationBarTitleText": "简历详情",
+//         "onReachBottomDistance": 100,
+//         "app-plus": {
+//           "titleNView": false
+//         }
+//       }
+//     },
+//     {
+//       "path": "pages/xc-upload/index",
+//       "style": {
+//         "navigationBarTitleText": "文件上传",
+//         "app-plus": {
+//           "titleNView": false
+//         }
+//       }
+//     },
+//     {
+//       "path": "pages/xc-recent/index",
+//       "style": {
+//         "navigationBarTitleText": "最近查看",
+//         "onReachBottomDistance": 100,
+//         "app-plus": {
+//           "titleNView": false
+//         }
+//       }
+//     },
+//     {
+//       "path": "pages/xc-mine/index",
+//       "style": {
+//         "navigationBarTitleText": "个人中心",
+//         "app-plus": {
+//           "titleNView": false
+//         }
+//       }
+//     },
+//     {
+//       "path": "pages/xc-prompt/index",
+//       "style": {
+//         "navigationBarTitleText": "信息提示",
+//         "onReachBottomDistance": 100,
+//         "app-plus": {
+//           "titleNView": false
+//         }
+//       }
+//     }
+//     // #endif
+//   ],
+//   "globalStyle": {
+//     "navigationBarTextStyle": "white",
+//     "navigationBarTitleText": "HR助手",
+//     "navigationBarBackgroundColor": "#4A57FF",
+//     "backgroundColor": "#FFFFFF"
+//   },
+//   // #ifdef MP-WEIXIN
+//   "tabBar": {
+//     "color": "#737380",
+//     "selectedColor": "#4A57FF",
+//     "borderStyle": "black",
+//     "backgroundColor": "#F8F8F8",
+//     "list": [
+//       {
+//         "pagePath": "pages/xc-resume-screening/index",
+//         "iconPath": "static/image/ic-resume-screening-n.png",
+//         "selectedIconPath": "static/image/ic-resume-screening-f.png",
+//         "text": "简历筛选"
+//       },
+//       {
+//         "pagePath": "pages/xc-interview-arranged/index",
+//         "iconPath": "static/image/ic-interview-arranged-n.png",
+//         "selectedIconPath": "static/image/ic-interview-arranged-f.png",
+//         "text": "面试安排"
+//       },
+//       {
+//         "pagePath": "pages/xc-record/index",
+//         "iconPath": "static/image/ic-import-history-n.png",
+//         "selectedIconPath": "static/image/ic-import-history-f.png",
+//         "text": "导入记录"
+//       },
+//       {
+//         "pagePath": "pages/xc-recent/index",
+//         "iconPath": "static/image/ic-recent-call-n.png",
+//         "selectedIconPath": "static/image/ic-recent-call-f.png",
+//         "text": "最近查看"
+//       },
+//       {
+//         "pagePath": "pages/xc-mine/index",
+//         "iconPath": "static/image/ic-personal-n.png",
+//         "selectedIconPath": "static/image/ic-personal-f.png",
+//         "text": "个人中心"
+//       }
+//     ]
+//   },
+//   // #endif
+//   "condition": {
+//     //模式配置，仅开发期间生效
+//     "current": 0, //当前激活的模式(list 的索引项)
+//     "list": [
+//       {
+//         "name": "", //模式名称
+//         "path": "", //启动页面，必选
+//         "query": "" //启动参数，在页面的onLoad函数里面得到
+//       }
+//     ]
+//   }
+// }

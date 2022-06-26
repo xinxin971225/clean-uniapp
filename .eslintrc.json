@@ -1,0 +1,28 @@
+{
+  "env": {
+    "node": true
+  },
+  "extends": [
+    "proste/typescript.js",
+    "plugin:vue/vue3-recommended",
+    "eslint-config-prettier"
+  ],
+  "rules": {
+    "vue/multi-word-component-names": "off",
+    "@typescript-eslint/camelcase": "off",
+    "camelcase": "off",
+    "no-param-reassign": "warn",
+    "max-params": "warn"
+  },
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser",
+    "project": "./tsconfig.json",
+    "tsconfigRootDir": ".",
+    "warnOnUnsupportedTypeScriptVersion": true,
+    "extraFileExtensions": [".vue"]
+  },
+  "globals": {
+    "uni": "readonly"
+  }
+}
